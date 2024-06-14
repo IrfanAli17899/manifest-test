@@ -13,7 +13,7 @@ export type InputProps = {
 } & Omit<TextInputProps, "onChange">
 
 const Input = (props: InputProps, ref: Ref<TextInput>) => {
-  const { icon, placeholder, onFocus, onBlur, value, onChange } = props;
+  const { icon, placeholder, onFocus, onBlur, value, onChange,...rest } = props;
 
   const [localValue, setLocalValue] = useState("");
 
@@ -72,6 +72,7 @@ const Input = (props: InputProps, ref: Ref<TextInput>) => {
         onFocus={handleFocus}
         onBlur={handleBlur}
         style={styles.input}
+        {...rest}
       />
       <Animated.View style={[styles.gradientBorderContainer, animatedGradientStyle]}>
         <LinearGradient

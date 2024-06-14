@@ -35,7 +35,7 @@ const SwiperDot: React.FC<SwiperDotProps> = ({ index, currentPage }) => {
   return (
     <Animated.View style={[styles.dot, dotStyle]}>
       <LinearGradient
-        colors={theme.colors['manifest-gradient']}
+        colors={theme.colors['manifest-gradient-2']}
         locations={[0, 0.34, 1]}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0 }}

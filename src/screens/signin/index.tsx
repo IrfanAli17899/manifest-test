@@ -37,7 +37,7 @@ const SignInScreen = () => {
           <Input icon={require("@assets/images/icons/mail-icon.png")} placeholder="Email*" />
         </FormItem>
         <FormItem name="password">
-          <Input secureTextEntry icon={require("@assets/images/icons/lock-icon.png")} placeholder="Password*" />
+          <Input secureTextEntry icon={require("@assets/images/icons/lock-icon.png")}  placeholder="Password*" />
         </FormItem>
         <Button onPress={() => formRef.current?.submit()} loading={loading}>Sign In</Button>
       </Form>

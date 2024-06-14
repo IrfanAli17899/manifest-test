@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   outlineContainer: {
-    backgroundColor: "#f1ebeb"
+    backgroundColor: "#FFF6F4",
   },
   icon: {
     width: 24,

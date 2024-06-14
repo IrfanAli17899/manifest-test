@@ -15,12 +15,13 @@ const { width } = Dimensions.get('window');
 
 export interface SwiperProps {
     children: React.ReactNode
+    currentPage?: Animated.SharedValue<number>
 }
 
-const Swiper = ({ children }: SwiperProps) => {
+const Swiper = ({ children, currentPage: currentPageProp }: SwiperProps) => {
     const pageCount = React.Children.count(children)
     const scrollViewRef = useAnimatedRef<Animated.ScrollView>();
-    const currentPage = useSharedValue(0);
+    const currentPage = currentPageProp ?? useSharedValue(0);
 
     const scrollHandler = useAnimatedScrollHandler({
         onScroll: (event) => {

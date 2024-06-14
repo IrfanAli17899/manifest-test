@@ -76,6 +76,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 16,
         paddingVertical: 56,
         flex: 1,
+        backgroundColor: "#FFF6F4",
     },
     webContainer: {
         paddingVertical: 24,
